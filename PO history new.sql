@@ -17,9 +17,9 @@ SELECT
 	  ,COUNT(*) ReceivedQuantity
       ,[Thing].[CostPrice]
       ,[Thing].[Mrp]
-	  , (([Thing].[Mrp] - [Thing].[CostPrice]) / [Thing].[Mrp]) * 100 GP
-	  , Employee.BadgeId PriceSetByCDBD
-	  , Designation.DesignationName
+	  ,(([Thing].[Mrp] - [Thing].[CostPrice]) / [Thing].[Mrp]) * 100 GP
+	  ,Employee.BadgeId PriceSetByCDBD
+	  ,Designation.DesignationName
 	  ,Employee.FullName PriceSetEmployee
 
  FROM [egg1].[dbo].[PurchaseOrder]
